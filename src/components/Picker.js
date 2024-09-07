@@ -396,7 +396,7 @@ function Picker({
         item[ITEM_SCHEMA.parent] !== null,
     );
 
-    children.forEach((child) => {
+    children.reverse().forEach((child) => {
       const index = sortedItems.findIndex(
         (item) =>
           item[ITEM_SCHEMA.parent] === child[ITEM_SCHEMA.parent] ||
